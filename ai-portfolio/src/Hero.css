@@ -1,0 +1,26 @@
+.hero {
+  height: 100vh;
+  background: #0a0a0b;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero h2 {
+  color: #00f2fe;
+}
+
+.buttons a {
+  margin: 10px;
+  padding: 10px 20px;
+  background: #2e5bff;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+}
