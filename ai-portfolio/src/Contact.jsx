@@ -48,7 +48,7 @@ function Contact() {
                 <FaGithub />
               </a>
               <a
-                href="https://linkedin.com/in/saivyshuteja"
+                href="https://linkedin.com/in/adepusai"
                 target="_blank"
                 rel="noreferrer"
                 className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-2xl hover:border-cyan-400 hover:-translate-y-2 transition duration-300"
