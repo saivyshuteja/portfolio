@@ -1,22 +1,73 @@
 import { FaArrowRight } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
   {
     title: "Conversational RAG Platform",
-    desc: "Context-aware AI assistant with PDF ingestion, memory persistence, semantic retrieval, and hallucination reduction.",
-    tags: ["LangChain", "ChromaDB", "Groq API"],
+
+    desc:
+      "Context-aware AI assistant with PDF upload, memory persistence, semantic retrieval, and hallucination reduction using LangChain and ChromaDB.",
+
+    tags: [
+      "LangChain",
+      "ChromaDB",
+      "Groq API",
+      "Streamlit",
+    ],
+
+    github:
+      "https://github.com/saivyshuteja/Conversational-RAG-with-PDF-Chat-History",
   },
 
   {
-    title: "Semantic Retrieval Engine",
-    desc: "Embedding-powered document intelligence system using vector search and contextual AI retrieval workflows.",
-    tags: ["Embeddings", "Vector Search", "FastAPI"],
+    title: "PDF Question Answering System",
+
+    desc:
+      "RAG-based document intelligence system using vector embeddings and contextual retrieval workflows.",
+
+    tags: [
+      "RAG",
+      "ChromaDB",
+      "Groq API",
+      "Streamlit",
+    ],
+
+    github:
+      "https://github.com/saivyshuteja/PDF-Q-A-System-Streamlit-LangChain-Groq-",
   },
 
   {
-    title: "LLM Chat Interface",
-    desc: "Customizable chatbot architecture with dynamic prompting, observability, and parameter tuning.",
-    tags: ["LLMs", "Prompting", "LangSmith"],
+    title: "LLM Chatbot",
+
+    desc:
+      "Dynamic chatbot system with configurable parameters, prompt engineering, and Ollama integration.",
+
+    tags: [
+      "LLMs",
+      "Ollama",
+      "LangChain",
+      "Prompting",
+    ],
+
+    github:
+      "https://github.com/saivyshuteja/Generative-AI-Chatbot",
+  },
+
+  {
+    title: "Dog vs Cat Classification",
+
+    desc:
+      "Deep learning image classification model built using TensorFlow and CNN architecture.",
+
+    tags: [
+      "TensorFlow",
+      "CNN",
+      "Keras",
+      "Deep Learning",
+    ],
+
+    github:
+      "https://github.com/saivyshuteja/Dog_vs_Cat__Classification_using_CNN",
   },
 ];
 
@@ -80,12 +131,16 @@ function Projects() {
                   ))}
                 </div>
 
-                <button className="group flex items-center gap-3 text-cyan-400 font-semibold text-lg">
-
-                  Explore Project
-
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group inline-flex items-center gap-3 text-cyan-400 font-semibold text-lg hover:text-purple-400 transition"
+                >
+                  <FaGithub />
+                  View on GitHub
                   <FaArrowRight className="group-hover:translate-x-2 transition" />
-                </button>
+                </a>
               </div>
             </div>
           ))}

@@ -3,6 +3,7 @@ import {
   FaGithub,
   FaLinkedin,
   FaArrowRight,
+  FaExternalLinkAlt,
 } from "react-icons/fa";
 
 import profile from "./assets/profile.jpg";
@@ -93,34 +94,44 @@ function Hero() {
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-6">
 
-              {/* Primary Button */}
-              <button className="group px-8 py-5 rounded-2xl bg-linear-to-r from-cyan-400 to-purple-500 text-black font-bold text-lg hover:scale-105 transition duration-300 shadow-2xl shadow-cyan-500/20 flex items-center justify-center gap-3">
+              {/* GitHub Button */}
+              <a
+                href="https://github.com/saivyshuteja"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-3 px-6 py-3 rounded-2xl bg-white/5 border border-white/10 hover:border-cyan-400 hover:-translate-y-1 transition duration-300"
+              >
+                <FaGithub />
+                GitHub Profile
+              </a>
 
-                Explore Projects
-
-                <FaArrowRight className="group-hover:translate-x-1 transition" />
-              </button>
-
-              {/* Secondary Button */}
-              <button className="px-8 py-5 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg hover:border-cyan-400 hover:bg-cyan-400/10 transition duration-300 text-lg">
+              {/* Resume Download Button */}
+              <a
+                href="/AI-Engineer-Resume.pdf"
+                download="AI-Engineer-Resume.pdf"
+                className="flex items-center gap-3 px-6 py-3 rounded-2xl bg-gradient-to-r from-cyan-400 to-purple-500 text-black font-bold hover:scale-105 transition duration-300"
+              >
+                <FaExternalLinkAlt />
                 Download Resume
-              </button>
+              </a>
             </div>
 
             {/* Social Icons */}
             <div className="flex gap-6 mt-12">
 
               <a
-                href="https://github.com/"
+                href="https://github.com/saivyshuteja"
                 target="_blank"
+                rel="noreferrer"
                 className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-lg flex items-center justify-center text-2xl hover:border-cyan-400 hover:-translate-y-2 transition duration-300"
               >
                 <FaGithub />
               </a>
 
               <a
-                href="https://linkedin.com/"
+                href="https://linkedin.com/in/saivyshuteja"
                 target="_blank"
+                rel="noreferrer"
                 className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-lg flex items-center justify-center text-2xl hover:border-cyan-400 hover:-translate-y-2 transition duration-300"
               >
                 <FaLinkedin />

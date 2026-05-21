@@ -39,17 +39,28 @@ function Contact() {
 
             {/* Socials */}
             <div className="flex gap-5">
-
-              {[FaGithub, FaLinkedin, FaEnvelope].map(
-                (Icon, index) => (
-                  <div
-                    key={index}
-                    className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-2xl hover:border-cyan-400 hover:-translate-y-2 transition duration-300"
-                  >
-                    <Icon />
-                  </div>
-                )
-              )}
+              <a
+                href="https://github.com/saivyshuteja"
+                target="_blank"
+                rel="noreferrer"
+                className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-2xl hover:border-cyan-400 hover:-translate-y-2 transition duration-300"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="https://linkedin.com/in/saivyshuteja"
+                target="_blank"
+                rel="noreferrer"
+                className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-2xl hover:border-cyan-400 hover:-translate-y-2 transition duration-300"
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                href="mailto:steja9535@gmail.com"
+                className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-2xl hover:border-cyan-400 hover:-translate-y-2 transition duration-300"
+              >
+                <FaEnvelope />
+              </a>
             </div>
           </div>
 
